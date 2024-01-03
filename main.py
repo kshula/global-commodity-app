@@ -3,8 +3,8 @@ import pandas as pd
 import plotly.express as px
 
 # Load data from CSV files
-commodity_data = pd.read_csv('data\data_commodity.csv', encoding='latin1')
-index_data = pd.read_csv('data\index.csv', encoding='latin1')
+commodity_data = pd.read_csv('data_commodity.csv', encoding='latin1')
+index_data = pd.read_csv('index.csv', encoding='latin1')
 
 # Set the Date column as the index for time series plotting
 commodity_data['Date'] = pd.to_datetime(commodity_data['Date'])
